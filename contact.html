@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inquire — Amna's Photography</title>
+<meta name="description" content="Begin an inquiry with Amna's Photography. Based in Berkeley, available within 2–3 hours of the San Francisco Bay Area.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .contact-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--space-6); align-items: start; }
+  @media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; gap: var(--space-5); } }
+  .info-list { display: flex; flex-direction: column; gap: 1.6rem; }
+  .info-list .item { border-top: 1px solid var(--rule); padding-top: 1.4rem; }
+  .info-list .item h5 { font-family: var(--sans); font-size: 0.74rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--clay); margin: 0 0 0.4rem; font-weight: 600; }
+  .info-list .item p, .info-list .item a { font-family: var(--serif); font-size: 1.3rem; font-style: italic; line-height: 1.45; color: var(--ink); margin: 0; transition: color 0.3s; }
+  .info-list .item a:hover { color: var(--clay); }
+  .info-list .item small { display: block; margin-top: 0.4rem; font-family: var(--sans); font-size: 0.85rem; font-style: normal; color: var(--ink-mute); }
+  .form-status { font-family: var(--serif); font-style: italic; font-size: 1.1rem; padding-top: 1rem; }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <a class="nav__brand" href="index.html">Amna's <em class="italic">Photography</em><sup>EST. 2017</sup></a>
+  <div class="nav__center">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Reviews</a>
+    <a href="journal.html">Journal</a>
+  </div>
+  <a class="nav__cta active" href="contact.html">Inquire</a>
+  <button class="nav__toggle" aria-label="Open menu"><span></span><span></span></button>
+</nav>
+<div class="nav__drawer">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="testimonials.html">Reviews</a><a href="journal.html">Journal</a><a href="contact.html">Inquire</a>
+</div>
+
+<header class="pagehead">
+  <div class="reveal">
+    <p class="chapter"><strong>Chapter VII.</strong>Inquire</p>
+    <h1 style="margin-top: 0.8rem;">Tell me about<br>your <span class="italic">moment.</span></h1>
+  </div>
+  <div class="pagehead__meta reveal" data-delay="1">
+    <p class="lead">A short note is enough. The form below or any of the channels on the right. I respond personally within 24 hours.</p>
+  </div>
+</header>
+
+<!-- ========= MAIN ========= -->
+<section class="section">
+  <div class="shell">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <form id="contact-form" class="reveal">
+        <p class="chapter"><strong>I.</strong>The form</p>
+        <h2 class="tight" style="margin: 0.6rem 0 var(--space-5); font-size: clamp(2rem, 4vw, 3rem);">A few <span class="italic">questions.</span></h2>
+
+        <div class="form-grid">
+          <div class="field">
+            <label>First name <span class="req">*</span></label>
+            <input type="text" name="first_name" required>
+          </div>
+          <div class="field">
+            <label>Last name <span class="req">*</span></label>
+            <input type="text" name="last_name" required>
+          </div>
+          <div class="field">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="(optional)">
+          </div>
+
+          <div class="field full">
+            <label>What kind of session? <span class="req">*</span></label>
+            <select name="session_type" required>
+              <option value="">Select one</option>
+              <option>Newborn</option>
+              <option>Maternity</option>
+              <option>Family</option>
+              <option>Couples / engagement</option>
+              <option>Wedding</option>
+              <option>Cultural celebration (mehendi / nikah / multi-event)</option>
+              <option>Brand or product</option>
+              <option>Editorial / commercial</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Approximate date</label>
+            <input type="text" name="date" placeholder="e.g. mid June 2026">
+          </div>
+          <div class="field">
+            <label>Location</label>
+            <input type="text" name="location" placeholder="e.g. Berkeley · in-home">
+          </div>
+
+          <div class="field full">
+            <label>Tell me about the people and the moment <span class="req">*</span></label>
+            <textarea name="message" required placeholder="Anything you'd like me to know. The names. The room. The reason."></textarea>
+          </div>
+
+          <div class="field full">
+            <label>How did you find me?</label>
+            <input type="text" name="referrer" placeholder="Google, friend, Instagram, the journal...">
+          </div>
+        </div>
+
+        <button type="submit" class="btn" style="margin-top: var(--space-5);">Send the inquiry</button>
+        <p class="form-status muted"></p>
+      </form>
+
+      <!-- INFO -->
+      <aside class="reveal" data-delay="1">
+        <p class="chapter"><strong>II.</strong>Direct lines</p>
+        <h2 class="tight" style="margin: 0.6rem 0 var(--space-5); font-size: clamp(2rem, 4vw, 3rem);">Reach <span class="italic">me.</span></h2>
+
+        <div class="info-list">
+          <div class="item"><h5>Phone &amp; WhatsApp</h5><a href="tel:+16282287587">+1 628 228 7587</a><small>Best for quick questions and date checks.</small></div>
+          <div class="item"><h5>Email</h5><a href="mailto:hello@amnasphotography.com">hello@amnasphotography.com</a><small>Best for detailed inquiries and brand briefs.</small></div>
+          <div class="item"><h5>Studio</h5><p>Berkeley, California</p><small>Available within 2&ndash;3 hours of the Bay. Will travel further for weddings and longer commissions.</small></div>
+          <div class="item"><h5>Hours</h5><p>Mon &ndash; Sat, 9 to 6 PT</p><small>Sessions available evenings and Sundays by arrangement.</small></div>
+          <div class="item"><h5>Elsewhere</h5><a href="https://www.facebook.com/profile.php?id=100063648582807">Facebook · @AmnasPhotography</a><small>Nine years of work, 7.7K followers, 81 reviews.</small></div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========= MAP / LOCATION ========= -->
+<section class="section" style="background: var(--paper-blush);">
+  <div class="shell">
+    <div class="spread reveal" style="margin-bottom: var(--space-5);">
+      <div>
+        <p class="chapter"><strong>III.</strong>Travel area</p>
+        <h2 class="tight" style="margin-top: 0.6rem;">Where I <span class="italic">work.</span></h2>
+      </div>
+      <p class="lead">Berkeley is home base. From here I cover the entire San Francisco Bay Area, plus Sonoma and Napa, the Peninsula, the South Bay, and Santa Cruz. Anything beyond a three-hour drive is travel-quoted as part of the package.</p>
+    </div>
+
+    <div class="mosaic">
+      <article class="span-3 reveal">
+        <p class="mono" style="color: var(--clay);">Within 1 hour</p>
+        <h4 style="font-family: var(--serif); font-size: 1.2rem; margin: 0.4rem 0;">Berkeley · Oakland · SF · Marin · Albany · Emeryville · El Cerrito · Richmond · Walnut Creek</h4>
+      </article>
+      <article class="span-3 reveal" data-delay="1">
+        <p class="mono" style="color: var(--clay);">Within 2 hours</p>
+        <h4 style="font-family: var(--serif); font-size: 1.2rem; margin: 0.4rem 0;">Sausalito · Mill Valley · Half Moon Bay · Palo Alto · Mountain View · San Jose · Santa Cruz · Napa · Sonoma</h4>
+      </article>
+      <article class="span-3 reveal" data-delay="2">
+        <p class="mono" style="color: var(--clay);">Within 3 hours</p>
+        <h4 style="font-family: var(--serif); font-size: 1.2rem; margin: 0.4rem 0;">Sacramento · Healdsburg · Carmel · Big Sur · Monterey · Mendocino · Lake Tahoe (in season)</h4>
+      </article>
+      <article class="span-3 reveal" data-delay="3">
+        <p class="mono" style="color: var(--clay);">By arrangement</p>
+        <h4 style="font-family: var(--serif); font-size: 1.2rem; margin: 0.4rem 0;">Los Angeles · San Diego · Pacific Northwest · destination weddings worldwide</h4>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========= FAQ ========= -->
+<section class="section">
+  <div class="shell">
+    <div class="reveal">
+      <p class="chapter"><strong>IV.</strong>Quick answers</p>
+      <h2 class="tight" style="margin: 0.6rem 0 var(--space-5);">Frequently <span class="italic">asked.</span></h2>
+    </div>
+
+    <div>
+      <details class="feature-row reveal" style="display: block;">
+        <summary style="cursor: pointer; display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: baseline; list-style: none;">
+          <span class="num">01</span>
+          <h4>How far in advance should I book?</h4>
+          <span class="serif italic">+</span>
+        </summary>
+        <p style="margin-top: 1rem; max-width: 70ch; padding-left: calc(2rem + 1.2rem);">For weddings, six to twelve months. For newborn sessions, while you are still pregnant. For everything else, four to six weeks is usually enough.</p>
+      </details>
+
+      <details class="feature-row reveal" style="display: block;">
+        <summary style="cursor: pointer; display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: baseline; list-style: none;">
+          <span class="num">02</span>
+          <h4>What is your turnaround time?</h4>
+          <span class="serif italic">+</span>
+        </summary>
+        <p style="margin-top: 1rem; max-width: 70ch; padding-left: calc(2rem + 1.2rem);">A small sneak peek within 48 hours. The full edited gallery in two to three weeks. Weddings in four to six.</p>
+      </details>
+
+      <details class="feature-row reveal" style="display: block;">
+        <summary style="cursor: pointer; display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: baseline; list-style: none;">
+          <span class="num">03</span>
+          <h4>Do you travel?</h4>
+          <span class="serif italic">+</span>
+        </summary>
+        <p style="margin-top: 1rem; max-width: 70ch; padding-left: calc(2rem + 1.2rem);">Yes. Bay Area travel within three hours is included on all sessions. Beyond that, I quote travel as part of the package. For destination weddings, I have shot in Karachi, Antalya, Istanbul, and Princess Islands.</p>
+      </details>
+
+      <details class="feature-row reveal" style="display: block;">
+        <summary style="cursor: pointer; display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: baseline; list-style: none;">
+          <span class="num">04</span>
+          <h4>Do I get the raw files?</h4>
+          <span class="serif italic">+</span>
+        </summary>
+        <p style="margin-top: 1rem; max-width: 70ch; padding-left: calc(2rem + 1.2rem);">No. Edited high-resolution files only. Raw files are part of my craft, the way a chef would not hand over a half-cooked plate.</p>
+      </details>
+
+      <details class="feature-row reveal" style="display: block;">
+        <summary style="cursor: pointer; display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: baseline; list-style: none;">
+          <span class="num">05</span>
+          <h4>What if my newborn arrives early?</h4>
+          <span class="serif italic">+</span>
+        </summary>
+        <p style="margin-top: 1rem; max-width: 70ch; padding-left: calc(2rem + 1.2rem);">Your due date is a placeholder. Once baby arrives, you let me know and we book the session within ten days of the actual birth. I keep newborn slots flexible.</p>
+      </details>
+
+      <details class="feature-row reveal" style="display: block;">
+        <summary style="cursor: pointer; display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: baseline; list-style: none;">
+          <span class="num">06</span>
+          <h4>Can you photograph in our home?</h4>
+          <span class="serif italic">+</span>
+        </summary>
+        <p style="margin-top: 1rem; max-width: 70ch; padding-left: calc(2rem + 1.2rem);">Almost always yes, and I usually prefer it. Most of my favourite frames live in the rooms my clients already love.</p>
+      </details>
+
+      <details class="feature-row reveal" style="display: block;">
+        <summary style="cursor: pointer; display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: baseline; list-style: none;">
+          <span class="num">07</span>
+          <h4>Do you accept payment plans?</h4>
+          <span class="serif italic">+</span>
+        </summary>
+        <p style="margin-top: 1rem; max-width: 70ch; padding-left: calc(2rem + 1.2rem);">Yes. A 30% retainer holds the date. The remaining balance can be split across two or three installments through HoneyBook or direct transfer.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="shell">
+    <h3>A camera, a quiet <span class="italic">magic.</span></h3>
+    <div class="footer__grid">
+      <div class="footer__col"><h5>Studio</h5><p>Amna's Photography<br>Berkeley, California<br>Available 2&ndash;3 hours from the Bay</p></div>
+      <div class="footer__col"><h5>Contact</h5><a href="tel:+16282287587">+1 628 228 7587</a><a href="mailto:hello@amnasphotography.com">hello@amnasphotography.com</a><a href="https://wa.me/16282287587">WhatsApp</a></div>
+      <div class="footer__col"><h5>Explore</h5><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="journal.html">Journal</a></div>
+      <div class="footer__col"><h5>Elsewhere</h5><a href="https://www.facebook.com/profile.php?id=100063648582807">Facebook</a><a href="testimonials.html">Reviews · 4.9★</a><a href="contact.html">Inquire</a></div>
+    </div>
+    <div class="footer__bottom"><span>© 2026 Amna's Photography. All images by Amna and protected by copyright.</span><span>Berkeley · Karachi</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
